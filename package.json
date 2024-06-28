@@ -1,0 +1,15 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pkg:install": "cd content-mf && npm i && cd footer-mf && npm i && cd header-mf && npm i && cd root-main && npm i",
+    "dev": "concurrently \"cd content-mf && npm start\" \"cd footer-mf && npm start\"  \"cd header-mf && npm start\"  \"cd root-main && npm start\""
+  },
+  "keywords": [],
+  "author": "Vipin Sharma",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
